@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NotesRoutingModule } from './notes-routing.module';
 import { NotesComponent } from './notes.component';
@@ -21,7 +22,8 @@ import { NoteComponent } from './note/note.component';
   imports: [
     CommonModule,
     NotesRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule, 
+    HttpClientModule
   ]
 })
 export class NotesModule { }
