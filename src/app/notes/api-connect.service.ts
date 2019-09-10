@@ -9,7 +9,7 @@ export class ApiConnectService {
   constructor(private http: HttpClient) { };
 
   getAllNotes() {
-    return this.http.get('http://localhost:8000/notes');
+    return this.http.get('http://localhost:8888/notes');
   };
 
 }
