@@ -1,0 +1,5 @@
+<h1 class="title has-text-centered">Todas mis notas</h1>
+<div class="columns is-multiline">
+    <app-note *ngFor="let note of notes" [note]="note" class="column is-4"></app-note>
+    <slot></slot>
+</div>
